@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.EventSystems;
 using System;
 using UnityEngine.Events;
 
 public class PressHandler : MonoBehaviour, IPointerDownHandler
 {
-
 	[Serializable]
 	public class ButtonPressEvent : UnityEvent { } 
 
@@ -16,5 +14,4 @@ public class PressHandler : MonoBehaviour, IPointerDownHandler
 	{
 		OnPress.Invoke();
 	}
-
 }
