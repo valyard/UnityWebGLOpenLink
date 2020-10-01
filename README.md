@@ -1,6 +1,6 @@
 >A [WebGL](http://docs.unity3d.com/Manual/webgl-gettingstarted.html) Unity project is just a normal HTML page running a 3 000 000 lines of code JavaScript file.
 
-The heart of HTML pages are [links](http://va.lent.in) which can be opened either in the same window/tab or in a popup window/tab. Turns out that it's not that simple with a Unity WebGL project precisely because of one of the browser's security mechanisms.
+The heart of HTML pages are [links](http://va.lent.in) which can be opened either in the same window/tab or in a new window/tab. Turns out that it's not that simple with a Unity WebGL project precisely because of one of the browser's security mechanisms.
 
 Modern browsers open links in new tabs/windows only when they clearly see that this action resulted from a user input event, like mouse click for example. If not, Firefox displays this when a JavaScript uses ```window.open()``` code to open a new window:
 
@@ -14,7 +14,7 @@ A proper solution here would be the same described in [Unity WebGL Docs](http://
 
 This can be done in a few ways described in Unity WebGL Docs: [Interacting With Browser Scripting](http://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html). But let's see how one can write a WebGL JS Plugin to do this.
 
-A WebGL plugin is a **.jslib** file placed anywhere in your project. It's a good idea to store plugins somewhere like **/Assets/Plugins/WebGL** but it's not required anymore. New *Plugin Inspector* in Unity 5 makes life much easier:
+A WebGL plugin is a **.jslib** file placed anywhere within project. It's a good idea to store plugins somewhere like **/Assets/Plugins/WebGL** but it's not required anymore. New *Plugin Inspector* in Unity 5 makes life much easier:
 
 ![](/Images/plugin.png)
 
